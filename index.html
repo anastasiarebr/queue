@@ -97,8 +97,7 @@
         }
       }
       let array = [];
-      // setInterval(function () {
-        console.log(1)
+      setInterval(function () {
       $.getJSON('https://api.sdo.mpgu.org/queue', function (data) {
         array = []
         let array1 = ''
@@ -130,7 +129,7 @@
         })
         $('#contacts_list').html(array1)
       });
-      // }, 5000) 
+      }, 5000) 
     });
   </script>
 </body>
